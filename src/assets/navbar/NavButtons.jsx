@@ -1,9 +1,11 @@
 import PropTypes from "prop-types"
+import NavBarCss from '../css/navbar.module.css'
+
 
 const NavButtons = (prop) => {
     return(
         <>
-        <div className={prop.position}>
+        <div className="navBtn-container">
             <button>{prop.label}</button>
         </div>
         </>
@@ -11,7 +13,6 @@ const NavButtons = (prop) => {
 }
 NavButtons.PropTypes = {
     label: PropTypes.string.isRequired,
-    position: PropTypes.string.isRequired,
 }
 
 export default NavButtons
