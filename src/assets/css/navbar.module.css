@@ -1,8 +1,11 @@
 .container{
     background-color: #FFF;
+    display: flex;
+    flex-direction: row
 }
 .btnContainer{
     background-color: #FFF;
+;
 }
 button{
     background-color: #FFF;
