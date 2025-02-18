@@ -1,11 +1,16 @@
-.container{
+.container,.btnContainer{
     background-color: #FFF;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center;
 }
-.btnContainer{
-    background-color: #FFF;
-;
+.left, .right{
+    display: flex;
+}
+.lastChild button{
+    background-color: #2E5834;
+    color: #FFF;
+    border-radius: 40px;
 }
 button{
     background-color: #FFF;

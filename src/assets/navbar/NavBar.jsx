@@ -5,14 +5,16 @@ const NavItems = () => {
     return(
         <>
         <div className={NavBarCss.btnContainer}>
-        <div className="leftBtns">
+        <div className={NavBarCss.left}>
                 <NavButtons label='RECIPES'/>
                 <NavButtons label='ARTICLES'/>
                 <NavButtons label='ABOUT'/>
             </div>
-            <div className="rightBtns">
+            <div className={NavBarCss.right}>
                 <NavButtons label='+ADD RECIPES'/>
-                <NavButtons label='LOGIN/SIGNUP'/>
+                <div className={NavBarCss.lastChild}>
+                    <NavButtons label='LOGIN/SIGNUP'/>
+                </div>
             </div>
         </div>
         </>
@@ -33,7 +35,7 @@ const NavBar = () => {
                 </clipPath>
                 </defs>
             </svg>
-            <h2 className={NavBarCss.logo}>Fork It</h2>
+            <h2 className={NavBarCss.logo}>Fork <br />It</h2>
             <NavItems/>
         </div>
         </>
