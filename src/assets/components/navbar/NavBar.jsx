@@ -1,5 +1,4 @@
-import NavBarCss from '../css/navbar.module.css'
-
+import NavBarCss from '../../css/navbar.module.css'
 import NavButtons from "./NavButtons"
 const NavItems = () => {
     return(

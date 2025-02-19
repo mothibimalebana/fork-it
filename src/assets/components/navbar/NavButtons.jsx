@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
-import NavBarCss from '../css/navbar.module.css'
-
+import NavBarCss from "../../css/navbar.module.css"
 
 const NavButtons = (prop) => {
     return(
