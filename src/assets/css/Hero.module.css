@@ -1,0 +1,7 @@
+.container{
+    display: flex;
+    height: 550px;
+    width: 100%;
+    background-image: url('../img/Image.png');
+    object-fit: cover;
+}
