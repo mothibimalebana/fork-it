@@ -1,7 +1,9 @@
-.container{
-    display: flex;
-    height: 550px;
-    width: 100%;
-    background-image: url('../img/Image.png');
-    object-fit: cover;
+@media (min-width:800px){
+    .container {
+        background: url('../img/Image.png') #1d1d1d  no-repeat;
+        height: 550px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
 }

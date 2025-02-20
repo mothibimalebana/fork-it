@@ -30,6 +30,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+img{
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
 
 a {
   font-weight: 500;
