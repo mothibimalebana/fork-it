@@ -1,11 +1,17 @@
-.container,.btnContainer{
+.container,.brand ,.btnContainer{
     background-color: #FFF;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+.container{
+    justify-content: space-around;
+
+}
 .left, .right{
     display: flex;
+    margin-left: 4rem;
+    gap: 1rem;
 }
 .lastChild button{
     background-color: #2E5834;
