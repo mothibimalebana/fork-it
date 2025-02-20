@@ -33,7 +33,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #2E5834;
   text-decoration: inherit;
 }
 a:hover {
@@ -64,10 +64,7 @@ button {
 button:hover {
   border-color: #2E5834;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
 
 @media (prefers-color-scheme: light) {
   :root {
