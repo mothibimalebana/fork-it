@@ -1,9 +1,27 @@
-@media (min-width:800px){
-    .container {
-        background: url('../img/Image.png') #1d1d1d  no-repeat;
+.img{
+        position: relative;
+        background-color: #1d1d1d;
         height: 550px;
         width: 100%;
-        background-size: cover;
-        background-position: center;
+        object-fit: cover;
+        opacity: 0.9;
+        background: #1D1D1D;
+        filter: blur(1.1px);
     }
-}
+.text{
+        color: var(--Brand-Colors-White, #FFF);
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 50%; /* Adjust width */
+
+
+        position: absolute;
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for the element's size */
+        padding: 20px; /* Optional padding */
+    }
