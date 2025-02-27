@@ -19,7 +19,7 @@ const Food = () => {
         fetchData();
     },[])
 
-    console.log(foodList)
+    console.log(foodList.meals)
 }
 
 export default Food
