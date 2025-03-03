@@ -6,10 +6,12 @@ const Food = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch('https://www.themealdb.com/api/json/v1/1/list.php?a=list');
+                const response = await fetch('https:/www.themealdb.com/api/json/v1/1/random.php');
                 const data = await response.json();
+                const foods = await data.meals;
             
-                setFoodList(data)                
+                console.log(data.meals)
+                setFoodList(foods)                
             }
             catch(error){
                 console.error(error.message);
@@ -19,7 +21,7 @@ const Food = () => {
         fetchData();
     },[])
 
-    console.log(foodList.meals)
+    console.log(foodList[0])
 }
 
 export default Food
