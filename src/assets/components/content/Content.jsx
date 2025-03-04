@@ -1,5 +1,5 @@
 import { useState ,useEffect } from "react";
-
+import contentCss from '/src/assets/css/content.module.css';
 
 const Content = () => {
     const [foodList, setFoodList] = useState([]);
@@ -26,7 +26,7 @@ const Content = () => {
         return(
             <>
             <div className="cardItem">
-                <img src={imgSrc} alt={title}/>
+                <img className={contentCss.img} src={imgSrc} alt={title}/>
                 <h4>{title}</h4>
             </div>
             </>
@@ -39,7 +39,7 @@ const Content = () => {
         <div>
             <section>
                 <h3>Chicken Recipes</h3>
-                <div className="cards">
+                <div className={contentCss.cards}>
                 {foodList.map((foodItem) => {
                     return <CardItems key={foodItem.idMeal} title={foodItem.strMeal} imgSrc={foodItem.strMealThumb}/>
                 })}
