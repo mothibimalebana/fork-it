@@ -1,6 +1,6 @@
 
 import './App.css'
-import Food from './assets/api/Food'
+import Content from './assets/components/content/Content'
 import Hero from './assets/components/hero/Hero'
 import NavBar from './assets/components/navbar/NavBar'
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
     <NavBar/>
     <Hero/>
-    <Food/>
+    <Content/>
     </>
   )
 }

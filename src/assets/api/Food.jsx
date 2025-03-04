@@ -17,9 +17,26 @@ const Food = () => {
                 console.error(error.message);
             }
         }
-
-        fetchData();
     },[])
+
+    const CardItems = ({title, imgSrc, }) =>{
+        return(
+            <>
+            <div className="cardItem">
+                <img src={imgSrc} alt={title}/>
+                <h4>{title}</h4>
+            </div>
+            </>
+        )
+    }
+    
+    return(
+        <>
+        <div>
+            
+        </div>
+        </>
+    )
 }
 
 export default Food

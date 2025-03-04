@@ -1,6 +1,7 @@
-
+import Food from "../../api/Food";
 
 const Content = () => {
+
     return(
         <>
         <div>
@@ -20,3 +21,5 @@ const Content = () => {
         </>
     )
 }
+
+export default Content
