@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter } from 'react-router-dom'
 import Content from './assets/components/content/Content.jsx'
 import Beef from './assets/components/content/Beef.jsx'
+import Ribs from './assets/components/content/Ribs.jsx'
 
 createBrowserRouter([
   {
@@ -14,7 +15,11 @@ createBrowserRouter([
   {
     path: "Beef",
     element: <Beef/>,
-  }
+  },
+  {
+    path: "Ribs",
+    element: <Ribs/>,
+  },
 ])
 
 createRoot(document.getElementById('root')).render(
