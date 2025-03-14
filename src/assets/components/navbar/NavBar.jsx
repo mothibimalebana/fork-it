@@ -33,7 +33,7 @@ const NavBar = () => {
                 </svg>
                 <h2 className={NavBarCss.logo}>Fork <br />It</h2>
                 <div className={NavBarCss.left}>
-                <NavButtons label='Chicken'/>
+                <NavButtons label='App'/>
                 <NavButtons label='Beef'/>
                 <NavButtons label='Ribs'/>
                 </div>

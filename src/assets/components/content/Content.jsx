@@ -1,5 +1,7 @@
 import { useState ,useEffect } from "react";
 import contentCss from '/src/assets/css/content.module.css';
+import NavBar from "../navbar/NavBar";
+
 
 const Content = () => {
     const [foodList, setFoodList] = useState([]);

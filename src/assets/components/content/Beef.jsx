@@ -1,5 +1,6 @@
 import { useState ,useEffect } from "react";
 import contentCss from '/src/assets/css/content.module.css';
+import NavBar from "../navbar/NavBar";
 
 const Beef = () => {
     const [foodList, setFoodList] = useState([]);
@@ -37,8 +38,9 @@ const Beef = () => {
     return(
         <>
         <div>
+            <NavBar/>
             <section>
-                <h3>Chicken Recipes</h3>
+                <h3>Beef Recipes</h3>
                 <div className={contentCss.cards}>
                 {foodList.map((foodItem) => {
                     return <CardItems key={foodItem.idMeal} title={foodItem.strMeal} imgSrc={foodItem.strMealThumb}/>
