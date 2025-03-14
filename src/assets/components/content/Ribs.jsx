@@ -1,14 +1,14 @@
 import { useState ,useEffect } from "react";
 import contentCss from '/src/assets/css/content.module.css';
 
-const Content = () => {
+const Ribs = () => {
     const [foodList, setFoodList] = useState([]);
     
     useEffect(() => {
         async function fetchData() {
             try {
                 const response = await fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=ribs');
-                const data = await response.json();
+                const data = await response.json(chicken);
                 const foods = await data.meals;
             
                 setFoodList(foods)                
@@ -50,4 +50,4 @@ const Content = () => {
     )
 }
 
-export default Content
+export default Ribs

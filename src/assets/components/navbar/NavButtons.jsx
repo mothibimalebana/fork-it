@@ -5,7 +5,7 @@ const NavButtons = (prop) => {
     return(
         <>
         <div className="navBtn-container">
-            <button>{prop.label}</button>
+            <button><a href={prop.label}>{prop.label}</a></button>
         </div>
         </>
     )

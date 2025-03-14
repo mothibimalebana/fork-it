@@ -1,7 +1,7 @@
 import { useState ,useEffect } from "react";
 import contentCss from '/src/assets/css/content.module.css';
 
-const Content = () => {
+const Beef = () => {
     const [foodList, setFoodList] = useState([]);
     
     useEffect(() => {
@@ -50,4 +50,4 @@ const Content = () => {
     )
 }
 
-export default Content
+export default Beef
