@@ -1,11 +1,12 @@
 import PropTypes from "prop-types"
+import { Link } from "react-router-dom";
 import NavBarCss from "../../css/navbar.module.css"
 
 const NavButtons = (prop) => {
     return(
         <>
         <div className="navBtn-container">
-            <button><a href={prop.label}>{prop.label}</a></button>
+            <button><Link to={prop.label}>{prop.label}</Link></button>
         </div>
         </>
     )
