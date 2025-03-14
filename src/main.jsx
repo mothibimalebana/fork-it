@@ -5,20 +5,21 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Content from './assets/components/content/Content.jsx'
 import Beef from './assets/components/content/Beef.jsx'
-import Ribs from './assets/components/content/Ribs.jsx'
+import Sandwich from './assets/components/content/Sandwich.jsx'
+import Chicken from './assets/components/content/Chicken.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App/>,
+    path: "Chicken",
+    element: <Chicken/>,
   },
   {
     path: "Beef",
     element: <Beef/>,
   },
   {
-    path: "Ribs",
-    element: <Ribs/>,
+    path: "Sandwich",
+    element: <Sandwich/>,
   },
 ])
 

@@ -2,14 +2,14 @@ import { useState ,useEffect } from "react";
 import contentCss from '/src/assets/css/content.module.css';
 import NavBar from "../navbar/NavBar";
 
-const Ribs = () => {
+const Sandwich = () => {
     const [foodList, setFoodList] = useState([]);
     
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=pasta');
-                const data = await response.json(chicken);
+                const response = await fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=sandwich');
+                const data = await response.json();
                 const foods = await data.meals;
             
                 setFoodList(foods)                
@@ -40,7 +40,7 @@ const Ribs = () => {
         <div>
             <NavBar/>
             <section>
-                <h3>Ribs Recipes</h3>
+                <h3>Sandwich Recipes</h3>
                 <div className={contentCss.cards}>
                 {foodList.map((foodItem) => {
                     return <CardItems key={foodItem.idMeal} title={foodItem.strMeal} imgSrc={foodItem.strMealThumb}/>
@@ -52,4 +52,4 @@ const Ribs = () => {
     )
 }
 
-export default Ribs
+export default Sandwich

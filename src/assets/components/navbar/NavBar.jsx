@@ -33,9 +33,9 @@ const NavBar = () => {
                 </svg>
                 <h2 className={NavBarCss.logo}>Fork <br />It</h2>
                 <div className={NavBarCss.left}>
-                <NavButtons label='App'/>
+                <NavButtons label='Chicken'/>
                 <NavButtons label='Beef'/>
-                <NavButtons label='Ribs'/>
+                <NavButtons label='Sandwich'/>
                 </div>
             </div>
             <NavItems/>
