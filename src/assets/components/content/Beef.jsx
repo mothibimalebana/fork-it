@@ -38,7 +38,6 @@ const Beef = () => {
     return(
         <>
         <div>
-            <NavBar/>
             <section>
                 <h3>Beef Recipes</h3>
                 <div className={contentCss.cards}>

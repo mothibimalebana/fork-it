@@ -38,7 +38,6 @@ const Sandwich = () => {
     return(
         <>
         <div>
-            <NavBar/>
             <section>
                 <h3>Sandwich Recipes</h3>
                 <div className={contentCss.cards}>

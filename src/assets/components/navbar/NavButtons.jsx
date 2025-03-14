@@ -6,7 +6,7 @@ const NavButtons = (prop) => {
     return(
         <>
         <div className="navBtn-container">
-            <button><Link to={prop.label}>{prop.label}</Link></button>
+            <button><Link to={{pathname: `/${prop.label}`}}>{prop.label}</Link></button>
         </div>
         </>
     )

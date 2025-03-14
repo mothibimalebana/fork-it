@@ -1,6 +1,7 @@
 import { useState ,useEffect } from "react";
 import contentCss from '/src/assets/css/content.module.css';
 import NavBar from "../navbar/NavBar";
+import { Outlet } from "react-router-dom";
 
 
 const Content = () => {
@@ -39,14 +40,7 @@ const Content = () => {
     return(
         <>
         <div>
-            <section>
-                <h3>Chicken Recipes</h3>
-                <div className={contentCss.cards}>
-                {foodList.map((foodItem) => {
-                    return <CardItems key={foodItem.idMeal} title={foodItem.strMeal} imgSrc={foodItem.strMealThumb}/>
-                })}
-                </div>
-            </section>
+            <Outlet/>
         </div>
         </>
     )
