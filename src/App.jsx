@@ -8,7 +8,8 @@ function App() {
 
   return(
     <>
-    <Chicken/>
+    <NavBar/>
+    <Content/>
     </>
   )
 }

@@ -10,16 +10,22 @@ import Chicken from './assets/components/content/Chicken.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "Chicken",
-    element: <Chicken/>,
-  },
-  {
-    path: "Beef",
-    element: <Beef/>,
-  },
-  {
-    path: "Sandwich",
-    element: <Sandwich/>,
+    path: "/",
+    element: <App/>,
+    children: [
+      {
+        path: "Beef",
+        element: <Beef/>
+      },
+      {
+        path: "Sandwich",
+        element: <Sandwich/>,
+      },
+      {
+        path: "Chicken",
+        element: <Chicken/>,
+      },
+    ]
   },
 ])
 
